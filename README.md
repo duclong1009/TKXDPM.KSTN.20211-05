@@ -33,7 +33,23 @@ Sequence diagrams, communication diagrams, class diagrams for:
 - Rent bike, return bike usecases and merge: Dương Bá Tân
 - View renting info, deposit order usecases: Nguyễn Đức Long
 - View station details, search stations and view bike details usecases: Đoàn Ngọc Khánh
+
+## Lab 02
+### Tasks
+- Screens displacement diagrams
+- Subsystem design
+- Screens design
+### Contributor
+- Screens displacement diagrams: Dương Bá Tân
+- Subsystem design: all members
+- Screens design:
++ Dương Bá Tân: splash screen, barcode form, result screen, error notification
++ Nguyễn Đức Long: home screen, station details screen, rental bike screen
++ Đoàn Ngọc Khánh: bike details screen, deposit form screen, payment screen
 ### Revisions:
-- Rent bike, return bike usecases and merge: Đoàn Ngọc Khánh
-- View renting info, deposit order usecases: Dương Bá Tân
-- View station details, search stations and view bike details usecases: Nguyễn Đức Long
+- Screens displacement diagrams: Nguyễn Đức Long, Đoàn Ngọc Khánh
+- Subsystem design: all members
+- Screens design:
++ Đoàn Ngọc Khánh: splash screen, barcode form, result screen, error notification
++ Dương Bá Tân: home screen, station details screen, rental bike screen
++ Nguyễn Đức Long: bike details screen, deposit form screen, payment screen
