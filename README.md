@@ -43,13 +43,13 @@ Sequence diagrams, communication diagrams, class diagrams for:
 - Screens displacement diagrams: Dương Bá Tân
 - Subsystem design: all members
 - Screens design:
-+ Dương Bá Tân: splash screen, barcode form, result screen, error notification
-+ Nguyễn Đức Long: home screen, station details screen, rental bike screen
-+ Đoàn Ngọc Khánh: bike details screen, deposit form screen, payment screen
+  + Dương Bá Tân: splash screen, barcode form, result screen, error notification
+  + Nguyễn Đức Long: home screen, station details screen, rental bike screen
+  + Đoàn Ngọc Khánh: bike details screen, deposit form screen, payment screen
 ### Revisions:
 - Screens displacement diagrams: Nguyễn Đức Long, Đoàn Ngọc Khánh
 - Subsystem design: all members
 - Screens design:
-+ Đoàn Ngọc Khánh: splash screen, barcode form, result screen, error notification
-+ Dương Bá Tân: home screen, station details screen, rental bike screen
-+ Nguyễn Đức Long: bike details screen, deposit form screen, payment screen
+  + Đoàn Ngọc Khánh: splash screen, barcode form, result screen, error notification
+  + Dương Bá Tân: home screen, station details screen, rental bike screen
+  + Nguyễn Đức Long: bike details screen, deposit form screen, payment screen
