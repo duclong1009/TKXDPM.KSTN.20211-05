@@ -70,7 +70,7 @@ public class DepositScreenHandler extends BaseScreenHandler {
 
         });
         DepositController depositController = new DepositController();
-        int depositFees = depositController.calDepositFee(bike.getCategory());
+        int depositFees = depositController.calDepositFee(bike.getFees(),bike.getCategory());
         depositFee.setText(String.valueOf(depositFees) + " VND");
         submit.setOnMouseClicked(e-> {
             PaymentController paymentController = new PaymentController();
@@ -89,7 +89,7 @@ public class DepositScreenHandler extends BaseScreenHandler {
                 ex.printStackTrace();
             }
 //
-                });
+        });
     }
 
     public void setImage() {
