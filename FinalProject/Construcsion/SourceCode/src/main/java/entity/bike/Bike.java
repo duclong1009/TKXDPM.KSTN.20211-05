@@ -66,7 +66,7 @@ public class Bike {
         ResultSet res = stm.executeQuery(sql);
         if (res.next()) {
             System.out.println("Not null");
-            Bike b = new Bike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"), res.getString("image_path"));
+            Bike b = new Bike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"), res.getString("image_path"),res.getInt("fees"));
             return b;
         }
         return null;
@@ -79,7 +79,7 @@ public class Bike {
         ArrayList bikeList = new ArrayList();
         while (res.next()) {
             LOGGER.info("Exist bike query!!");
-            Bike b = new Bike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"), res.getString("image_path"));
+            Bike b = new Bike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"), res.getString("image_path"),res.getInt("fees"));
             bikeList.add(b);
         }
         return bikeList;
@@ -146,7 +146,7 @@ public class Bike {
         ArrayList bikeList = new ArrayList();
         while (res.next()) {
             LOGGER.info("Exist bike query!!");
-            Bike b = new Bike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"), res.getString("image_path"));
+            Bike b = new Bike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"), res.getString("image_path"),res.getInt("fees"));
             bikeList.add(b);
             System.out.println("Len res " + bikeList.size());
         }

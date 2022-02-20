@@ -28,8 +28,8 @@ public class ElectricBike extends Bike {
         this.imagePath = imagePath;
     }
 
-    public ElectricBike(int id, String bikeName, int status, int category_id, int station_id, String imagePath,float pin) {
-        super(id,bikeName,status,category_id,station_id,imagePath);
+    public ElectricBike(int id, String bikeName, int status, int category_id, int station_id, String imagePath,int fees,float pin) {
+        super(id,bikeName,status,category_id,station_id,imagePath,fees);
         this.pin = pin;
     }
 
@@ -40,7 +40,7 @@ public class ElectricBike extends Bike {
         ResultSet res = stm.executeQuery(sql);
         if(res.next()) {
             System.out.println("Not null");
-            ElectricBike b = new ElectricBike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"),res.getString("image_path"), res.getFloat("pin"));
+            ElectricBike b = new ElectricBike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"),res.getString("image_path"),res.getInt("fees"), res.getFloat("pin"));
             return b;
         }
         return null;
@@ -53,7 +53,7 @@ public class ElectricBike extends Bike {
         ArrayList bikeList = new ArrayList();
         while(res.next()) {
             LOGGER.info("Exist bike query!!");
-            ElectricBike b = new ElectricBike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"),res.getString("image_path"), res.getFloat("pin"));
+            ElectricBike b = new ElectricBike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"),res.getString("image_path"),res.getInt("fees"), res.getFloat("pin"));
             bikeList.add(b);
         }
         return bikeList;
@@ -127,7 +127,7 @@ public class ElectricBike extends Bike {
         ArrayList bikeList = new ArrayList();
         while(res.next()) {
             LOGGER.info("Exist bike query!!");
-            ElectricBike b = new ElectricBike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"),res.getString("image_path"), res.getFloat("pin"));
+            ElectricBike b = new ElectricBike(res.getInt("id"), res.getString("bike_name"), res.getInt("Status"), res.getInt("category_id"), res.getInt("station_id"),res.getString("image_path"),res.getInt("fees"), res.getFloat("pin"));
             bikeList.add(b);
             System.out.println("Len res " + bikeList.size());
         }

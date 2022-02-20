@@ -31,6 +31,7 @@ CREATE TABLE `bike` (
   `status` tinyint(1) NOT NULL,
   `category_id` int NOT NULL,
   `station_id` int NOT NULL,
+  `fees` int DEFAULT NULL,
   `image_path` varchar(55) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_bike_station1_idx` (`station_id`),
@@ -46,7 +47,7 @@ CREATE TABLE `bike` (
 
 LOCK TABLES `bike` WRITE;
 /*!40000 ALTER TABLE `bike` DISABLE KEYS */;
-INSERT INTO `bike` VALUES (1,'xe đạp mini thống nhất',NULL,1,2,2,'xe1.jpg'),(2,'xe đạp đôi g3c yamaha',NULL,1,3,1,'xe2.jpg'),(3,'xe đạp điện suzuki',80,1,4,2,'xe3.jpg'),(4,'xe đạp hitasa',NULL,1,2,1,'xe4.jpg'),(5,'xe đạp điện đôi honda',90,1,5,2,'xe5.jpg'),(6,'xe đạp đôi honda',NULL,1,3,1,'xe6.jpg'),(7,'xe đạp mini nhật maruishi',NULL,1,2,3,'xe7.jpg'),(8,'xe đạp thường trumix',NULL,1,2,3,'xe8.jpg'),(9,'xe đạp điện nakxus',75,1,3,3,'xe9.jpg');
+INSERT INTO `bike` VALUES (1,'xe đạp mini thống nhất',NULL,0,2,3,400000,'xe1.jpg'),(2,'xe đạp đôi g3c yamaha',NULL,1,3,1,550000,'xe2.jpg'),(3,'xe đạp điện suzuki',80,1,4,1,700000,'xe3.jpg'),(4,'xe đạp hitasa',NULL,1,2,1,400000,'xe4.jpg'),(5,'xe đạp điện đôi honda',90,1,5,2,800000,'xe5.jpg'),(6,'xe đạp đôi honda',NULL,1,3,1,550000,'xe6.jpg'),(7,'xe đạp mini nhật maruishi',NULL,1,2,3,400000,'xe7.jpg'),(8,'xe đạp thường trumix',NULL,1,2,1,400000,'xe8.jpg'),(9,'xe đạp điện nakxus',75,1,3,5,700000,'xe9.jpg'),(10,'xe đạp mini ',NULL,1,2,6,400000,'xe10.jpg'),(11,'xe đạp đôi mec',NULL,1,3,7,700000,'xe11.jpg'),(12,'xe đạp điện ninja',65,1,4,4,550000,'xe12.jpg');
 /*!40000 ALTER TABLE `bike` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -99,7 +100,7 @@ CREATE TABLE `station` (
 
 LOCK TABLES `station` WRITE;
 /*!40000 ALTER TABLE `station` DISABLE KEYS */;
-INSERT INTO `station` VALUES (1,'dora','/','số 1 trần duy hưng'),(2,'nobi','/','số 1 trần đại nghĩa'),(3,'xeko','/','số 1 nguyễn trãi'),(4,'chaien','/','số 1 đại cồ việt');
+INSERT INTO `station` VALUES (1,'eco blue','/','số 1 trần duy hưng'),(2,'eco green','/','số 1 trần đại nghĩa'),(3,'eco red','/','số 1 nguyễn trãi'),(4,'eco yellow','/','số 1 đại cồ việt'),(5,'eco pink','/','số 3 nguyễn hùng'),(6,'eco white','/','số 5 giếng mứt'),(7,'eco black','/','số 15 tôn thất tùng');
 /*!40000 ALTER TABLE `station` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -169,4 +170,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-07  9:57:11
+-- Dump completed on 2022-02-20 20:31:32
